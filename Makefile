@@ -4,7 +4,7 @@ all: $(objects)
 $(objects): %:%.cr
 
 %.cr:
-	@echo crystal build src/$@
+	@crystal build src/$@
 
 clean:
 	@rm -f $(objects)
